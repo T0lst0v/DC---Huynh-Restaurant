@@ -2,7 +2,7 @@
 :root {
   --color-bg: floralwhite;
   --color-main: #180703;
-  --color-accent: #602215;
+  --color-accent: #6c2416;
   --color-h: #dfca59;
 
   --color-a: #30475e;
@@ -110,13 +110,8 @@ a {
 }
 
 .logo {
-  /* position: relative; */
   height: 80px;
 }
-
-/* .navbar-links {
-  height: 100px;
-} */
 
 .navbar-links ul {
   display: flex;
@@ -192,6 +187,23 @@ a {
 
 .oreder-cntnr {
   display: none;
+  margin: 20px;
+}
+.btn-order {
+  width: 50%;
+  height: 40px;
+  margin: auto;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  color: var(--color-bg);
+  background-color: #ab2308;
+  border-radius: 4px;
+  border: none;
+}
+.btn-order:hover {
+  background-color: var(--color-accent); /* Green */
+  /* color: white; */
 }
 
 /* ----About----- */
@@ -346,6 +358,10 @@ footer {
 }
 
 @media (max-width: 490px) {
+  .oreder-cntnr {
+    display: flex;
+  }
+
   .bg-img {
     height: 600px;
     background-image: url(img/hero800.jpg);
