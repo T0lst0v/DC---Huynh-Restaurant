@@ -185,7 +185,7 @@ a {
 
 /* ----Orders----- */
 
-.oreder-cntnr {
+.order-cntnr {
   display: none;
   margin: 20px;
 }
@@ -355,10 +355,19 @@ footer {
   .about-img {
     margin-left: 10px;
   }
+  .cards_container {
+    margin: 20px;
+  }
+  .card {
+    width: 180px;
+  }
+  .card-img {
+    width: 180px;
+  }
 }
 
 @media (max-width: 490px) {
-  .oreder-cntnr {
+  .order-cntnr {
     display: flex;
   }
 
