@@ -1,0 +1,411 @@
+/* var colors & fonts */
+:root {
+  --color-bg: floralwhite;
+  --color-main: #180703;
+  --color-accent: #602215;
+  --color-h: #dfca59;
+
+  --color-a: #30475e;
+  --color-ah: #f05454;
+  --color-av: #30475e;
+
+  --color-content: #222831;
+  --color-border: #e3e3e3;
+
+  --font-main: "Outfit", sans-serif;
+  --font-h: "Inknut Antiqua", serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  position: relative;
+  height: 100%;
+  background-color: var(--color-bg);
+  font-family: var(--font-main);
+}
+
+body {
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  min-height: 100vh;
+  height: 100vh;
+  /* padding-bottom: 320px; */
+}
+.body {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: flex;
+  flex-flow: column wrap;
+  max-width: 1200px;
+
+  /* height: 100%; */
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-h);
+}
+
+a {
+  text-decoration: none;
+}
+
+.bg-img {
+  /* position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  justify-self: center; */
+  max-width: 1200px;
+  height: 825px;
+  background-image: url(img/hero2.jpg);
+}
+
+.nav-container {
+  background-color: var(--color-main);
+  height: 825px;
+}
+.brand-title {
+  margin-left: 20px;
+}
+.brand-title h1 {
+  font-size: 26px;
+  color: var(--color-h);
+  font-weight: 300;
+  line-height: 40px;
+}
+.brand-title h2 {
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--color-bg);
+}
+
+.navbar {
+  position: relative;
+  display: flex;
+  max-width: 1200px;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: var(--color-main); */
+  color: var(--color-bg);
+}
+.brand {
+  display: flex;
+  flex-flow: row;
+  margin-left: 20px;
+  height: 100px;
+  align-items: center;
+}
+
+.logo {
+  /* position: relative; */
+  height: 80px;
+}
+
+/* .navbar-links {
+  height: 100px;
+} */
+
+.navbar-links ul {
+  display: flex;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  padding: 20px;
+  color: var(--color-bg);
+  text-decoration: none;
+
+  display: block;
+  font-family: var(--font-h);
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.navbar-links a:hover {
+  color: var(--color-h);
+  background-color: var(--color-accent);
+  border-radius: 10px;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: fle;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: var(--color-bg);
+  border-radius: 10px;
+}
+
+/* ----Info----- */
+
+.info-container {
+  position: absolute;
+  top: 140px;
+  left: 20px;
+  color: var(--color-bg);
+  line-height: 24px;
+  display: grid;
+  row-gap: 24px;
+  grid-template-columns: 160px 100px;
+  grid-auto-rows: auto;
+}
+.hours {
+  grid-row: span 3;
+  text-align: center;
+}
+
+.icon {
+  height: 24px;
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(154deg) brightness(104%) contrast(102%);
+  padding-left: 20px;
+}
+.phone {
+  grid-row: span 2;
+}
+
+/* ----Orders----- */
+
+.oreder-cntnr {
+  display: none;
+}
+
+/* ----About----- */
+
+.about-cntnr {
+  position: relative;
+  /* display: flex; */
+  margin: 18px;
+  padding: 40px;
+  border: solid 1px var(--color-border);
+  border-radius: 10px;
+}
+.about-text {
+  min-width: 320px;
+  font-size: 18px;
+}
+.about-text p {
+  margin-top: 20px;
+}
+.about-img {
+  float: right;
+  height: 250px;
+  margin-left: 40px;
+  border-radius: 6px;
+}
+
+.testimonials-cntnr {
+  margin-top: 80px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  gap: 16px;
+  /* background-color: white; */
+}
+
+.testimonials {
+  color: var(--color-accent);
+  text-align: center;
+  padding: 12px;
+  line-height: 24px;
+  border-bottom: solid 1px var(--color-h);
+  border-top: solid 1px var(--color-h);
+  background-color: rgb(252, 249, 243);
+  border-radius: 10px;
+}
+
+/* ----Cards----- */
+
+.cards_container {
+  margin: 10px 60px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 30px;
+  /* column-gap: ; */
+}
+
+.card {
+  position: relative;
+  width: 200px;
+  height: 300px;
+  background-color: white;
+  box-shadow: 0px 10px 20px -20px black;
+  border-radius: 6px;
+  border: solid 1px rgb(232, 232, 232);
+
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 10px;
+}
+
+.card-img {
+  object-fit: cover;
+  width: 200px;
+  height: 200px;
+  background-color: gray;
+  border-radius: 6px;
+}
+
+.card h4 {
+  font-size: 1rem;
+  line-height: 1rem;
+}
+
+/* -----Footer----- */
+footer {
+  position: relative;
+  margin-top: 80px;
+  background-color: var(--color-main);
+  color: var(--color-bg);
+  bottom: 0;
+  width: 100%;
+  height: 140px;
+  border-radius: 20px 20px 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-bg);
+}
+
+.footer {
+  align-items: center;
+  display: flex;
+  flex-flow: column;
+  gap: 4px;
+}
+
+@media (max-width: 800px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .toggle-button {
+    display: flex;
+  }
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+    background-color: var(--color-main);
+  }
+
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navbar-links ul li {
+    text-align: center;
+    border-top: solid 1px rgba(255, 255, 255, 0.2);
+  }
+
+  .navbar-links ul li a {
+    padding: 0;
+  }
+
+  .navbar-links a:hover {
+    border-radius: 0px;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+  .about-img {
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 490px) {
+  .bg-img {
+    height: 600px;
+    background-image: url(img/hero800.jpg);
+  }
+  .nav-container {
+    height: 600px;
+  }
+  .info-container {
+    padding: 10px;
+    top: 100px;
+    background-color: rgba(58, 14, 14, 0.4);
+    border-radius: 10px;
+  }
+  .logo {
+    /* position: relative; */
+    height: 60px;
+  }
+  .about-img {
+    margin: 0;
+    width: 100%;
+    height: auto;
+  }
+  .about-cntnr {
+    padding: 10px;
+    margin: 10px;
+  }
+  .about-text {
+    font-size: 1rem;
+    min-width: 100%;
+  }
+  .brand-title h1 {
+    font-size: 1rem;
+  }
+  .brand-title {
+    margin-left: 5px;
+  }
+  .brand-title h2 {
+    font-size: 0.7rem;
+  }
+  .testimonials-cntnr {
+    margin-top: 30px;
+  }
+  .testimonials {
+    width: 100%;
+    font-size: 1rem;
+    line-height: auto;
+    display: flex;
+    flex-flow: column;
+  }
+  .cards_container {
+    margin: 10px;
+    justify-content: center;
+  }
+  .card {
+    width: 100%;
+  }
+  .card-img {
+    width: 100%;
+  }
+  footer {
+    margin-top: 30px;
+  }
+}
